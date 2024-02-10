@@ -1,0 +1,72 @@
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: Arial, sans-serif; /* Set the default font */
+    margin: 0;
+    padding: 5px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 200px;
+}
+
+h1 {
+    color: #333; /* Dark grey color */
+    text-align: center; /* Center-align the header */
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-size: 14px;
+}
+
+img {
+    display: block; /* Block display to apply margin auto */
+    max-width: 100px; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+button {
+    background-color: #008cba; /* Blue background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 12px; /* Padding around the text */
+    text-align: center; /* Center-align the text */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Allow setting dimensions */
+    font-size: 14px; /* Larger text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #005f73; /* Darker blue on hover */
+}
+#toast-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999999;
+}
+
+.toast {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 14px;
+}
+
+.toast-success {
+    background-color: #4CAF50; /* Green */
+}
+
+.toast-error {
+    background-color: #F44336; /* Red */
+}

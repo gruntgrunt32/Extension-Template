@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Your Extension Name",
+  "version": "1.0",
+  "homepage_url": "https://horizon-development.com",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webNavigation",
+    "tabs",
+    "activeTab",
+    "scripting"
+    
+  ],
+  "action": {
+    "default_icon": {
+      "32": "icon.png"
+    },
+    "default_title": "Your Extension Name",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
