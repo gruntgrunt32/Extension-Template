@@ -1,6 +1,6 @@
 # 🧩Extension Template  
 
-_A simple and customizable Chrome Extension template for building browser extensions._  
+_A simple and customizable Chrome Extension template for building browser extensions with a flask app to add additional functionalities._  
 
 ---
 
